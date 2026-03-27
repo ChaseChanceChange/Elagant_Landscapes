@@ -55,9 +55,9 @@ export const GALLERY_IMAGES: GalleryImage[] = [
 ];
 
 export const CONTACT_DETAILS = {
-  phone: '+353 80 000 0000',
-  whatsapp: '353800000000',
-  email: 'info@elegantlandscapes.ie',
-  address: 'Serving Dublin, Galway, Cork, and Surrounding Areas',
+  phone: '+353 083 482 5397',
+  whatsapp: '353833497418',
+  email: 'elegantlandscapes2@gmail.com',
+  address: 'Serving Dundalk, Dublin, Galway, Cork, and Surrounding Areas',
   facebook: 'https://www.facebook.com/p/Elegant-landscapes-100063486395535/',
 };
