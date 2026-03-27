@@ -7,8 +7,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    // Remove or comment out base when using dev/tunnel or production server
-    // base: '/Elagant_Landscapes/',   // ← Only uncomment for GitHub Pages
+    base: '/Elagant_Landscapes/',   // ← Required for GitHub Pages
 
     plugins: [react(), tailwindcss()],
 
@@ -22,14 +21,14 @@ export default defineConfig(({ mode }) => {
       },
     },
 
+    // You can keep server settings or remove them — they are ignored during build
     server: {
-      host: true,                    // Allow access from network / tunnel
-      allowedHosts: true,            // ← Key fix: allow any host (including trycloudflare.com)
-      
-      // Keep your existing HMR line if you want
+      host: true,
+      allowedHosts: true,
       hmr: process.env.DISABLE_HMR !== 'true',
     },
-
+  };
+});
     // Optional: for preview mode (npm run preview)
     preview: {
       host: true,
